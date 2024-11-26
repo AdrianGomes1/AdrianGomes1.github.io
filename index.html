@@ -25,19 +25,21 @@
     
     <div class="images">
     </div>
-    <script>window.onload=async ()=>{
-        let my = document.createElement("div");
-        let p1 = document.createElement("p");
-        let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        let sp;
-        for (let i in text){
-        sp = document.createElement("span");
-        sp.innerHTML=text[i];
-        sp.style.color=`hsl(${Math.floor(i/text.length*240)}, 100%, 50%)`;
-        p1.appendChild(sp);
+    <script>
+        window.onload=async ()=>{
+            let my = document.createElement("div");
+            let p1 = document.createElement("p");
+            let text = "Lorem ipsum dolor sit amet. Et doloremque architecto qui omnis cupiditate ut deserunt similique id quisquam amet eum voluptatem ullam quo libero dolor aut quia ratione. Qui voluptatem placeat non ratione possimus qui accusamus veritatis in expedita porro. Ut iure laboriosam sed consequatur consequatur et nemo neque sit internos dolorem qui repellendus temporibus! Et odio quibusdam et ducimus repudiandae sed corrupti voluptas aut expedita quibusdam aut necessitatibus numquam ut dolorem veritatis? Ut explicabo deleniti sit dolore asperiores ad repellendus libero. Est nulla sapiente ea nihil molestiae aut nobis quidem aut temporibus reprehenderit id error sint non ipsum magni. Eum optio aliquam et veritatis harum ut illum eaque. 33 quia velit qui earum molestiae et corporis nihil ex velit voluptate. Qui labore animi et repellendus consequatur est ipsa incidunt ea reprehenderit distinctio ad quia earum. Et dolorum aspernatur non dolorum laboriosam eum quasi voluptas ex galisum nemo. Aut quam iste hic dolore similique et suscipit repellendus.Aut quaerat magni vel sint doloremque id sequi galisum et quasi eveniet. Et aliquid quidem et quaerat natus sed illum quasi et iure doloremque ut molestias corrupti quo pariatur ullam qui placeat dignissimos. Aut praesentium dolores aut tempore fuga sit impedit unde non consequatur illum. Sit deserunt quam vel quas quas est consequatur rerum et repellat provident. Qui error accusamus ut quam sunt in ipsum beatae est mollitia esse non beatae voluptatem hic ipsa numquam sed odit natus. Et similique molestiae aut quam excepturi et suscipit minus ut iste nobis. Rem adipisci repudiandae ut omnis beatae id dicta numquam. Et deleniti quaerat eos beatae aliquid et ipsa officiis. Sit cumque tenetur sit dicta esse et blanditiis beatae aut excepturi dolorem qui nesciunt repellendus! Sed galisum culpa sed fugit ipsum ut nisi exercitationem vel quia cumque ut ipsam internos aut accusantium sequi et accusantium dolores. Et incidunt beatae et veniam tempore aut eveniet laborum ut voluptates ratione sed accusamus quam est voluptates enim et distinctio officiis.Et cumque perspiciatis sed architecto quae est enim corrupti. Non omnis quisquam eum deleniti voluptates eum necessitatibus autem est repudiandae veritatis ea dolorum voluptas hic reiciendis asperiores nam consectetur dolores. Id repudiandae accusantium hic iste cupiditate non officiis numquam non eius distinctio est omnis autem. At dolorem sequi est odio ipsum aut odio libero. Ut quod consectetur qui consectetur maiores et dolore suscipit ut quam labore et nulla voluptas ad optio reiciendis et quos deserunt. Ea molestias error aut tenetur reiciendis sit corrupti error. Eos voluptatem nemo ut quos earum in Quis dolor. Non quia repudiandae et eligendi corporis qui dolorum quas non optio eveniet aut similique adipisci. Qui porro excepturi et corporis nemo non aliquam rerum id consequatur dolorem At impedit natus ut cupiditate tenetur. Et soluta dolores ut veritatis aspernatur sed quos vero! Ea beatae veritatis rem quia Quis eos autem quia cum dolorem tenetur et voluptate reprehenderit cum exercitationem neque.";
+            let sp;
+            for (let i in text){
+                sp = document.createElement("span");
+                sp.innerHTML=text[i];
+                sp.style.color=`hsl(${Math.floor(i/text.length*360*4)}, 100%, 50%)`;
+                p1.appendChild(sp);
+            }
+            my.appendChild(p1);
+            document.body.appendChild(my);
         }
-        my.appendChild(p1);
-        document.body.appendChild(my);
-        }</script>
+        </script>
 </body>
 </html> 
