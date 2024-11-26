@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><center>STEM Club @ RLO</center></h1>
+    <p id="intro"><center>Hey!! Welcome to the website of the RLO STEM Club, we are amazing people! In this website, we will tell you what we do in STEM.</p>
+    <h2>What is STEM?</h2> 
+    <p> STEM is the best club in the world, it includes Science, Technology, Engineering, and Mathematics, amazing right? It's all about using these four subjects to solve real-life problems, ad create cool inventions. For example, scientists explore how the world works, engineers build and design machines, and mathematicians use numbers to explain everything! STEM is imortant because it helps us understand the world and come up with ideas to make life better, like creating new technology or finding ways to help the environment. Plus, it is super fun to experiment and learn how things work. </p> 
+    <h2> Why STEM matters</h2>
+    <p> STEM matters because it helps us solve problems, create new technology, and improve the world. It's the foundation for many careers that shape our future, like doctors, engineers, and scientists. Learning STEM teaches us how to think critically, work together, and come up with creative solutions to real-world challenges, like fighting climate change or building smarter cities. Plus, it drives innovation, making life safer, easier and more exciting!! </p>
+    <p> STEM is in everything we do! Science explains why the sky is blue and how plants grow. Technology gives us phones, games, and all the apps we can't live without. Engineering keeps our bridges from falling and designs roller coasters. Math? It's what stops us from messing up cookie recipes or overspending at the store. Whether it's using GPS, texting friends, or figuring out how much pizza to order, STEM makes life easier and way cooler!!</p>
+    <h5>How can you join?</h5>
+    
+    
+    <div class="images">
+    </div>
+    <script>window.onload=async ()=>{
+        let my = document.createElement("div");
+        let p1 = document.createElement("p");
+        let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        let sp;
+        for (let i in text){
+        sp = document.createElement("span");
+        sp.innerHTML=text[i];
+        sp.style.color=`hsl(${Math.floor(i/text.length*240)}, 100%, 50%)`;
+        p1.appendChild(sp);
+        }
+        my.appendChild(p1);
+        document.body.appendChild(my);
+        }</script>
+</body>
+</html> 
